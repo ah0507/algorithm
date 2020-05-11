@@ -1,0 +1,43 @@
+server:
+  port: 8899
+  servlet:
+    context-path:
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://root:root@192.168.17.228:27017/bus
+#      uri: mongodb://localhost:27017/bus
+#      host: localhost
+      host: 192.168.17.115
+      port: 27017
+      database: bus
+      username: root
+      password: root
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.17.117:1521/orcl
+    username: TJADMIN
+    password: ibmora8
+  #      primary:
+#        driver-class-name: com.mysql.jdbc.Driver
+#        jdbc-url: jdbc:mysql://192.168.17.228:3306/bus?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+##        jdbc-url: jdbc:mysql://localhost:3306/bus?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#        username: root
+#        password: root
+#      secondary:
+#        driver-class-name: oracle.jdbc.OracleDriver
+#        jdbc-url: jdbc:oracle:thin:@192.168.17.117:1521/orcl
+#        username: TJADMIN
+#        password: ibmora8
+  #  ehcache配置文件地址
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml
+    type: ehcache
+logging:
+  level:
+    net.chensee: info
+
+
+
