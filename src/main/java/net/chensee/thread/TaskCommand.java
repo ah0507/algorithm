@@ -14,6 +14,7 @@ public class TaskCommand implements Runnable {
 
     private final CountDownLatch countDownLatch;
 
+
     private final Task task;
 
     private MongoDao mongoDao;
