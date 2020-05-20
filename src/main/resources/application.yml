@@ -34,7 +34,7 @@ spring:
   cache:
     ehcache:
       config: classpath:ehcache.xml
-    type: ehcache
+    type: ehcache 
 logging:
   level:
     net.chensee: info
